@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.app-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stopwatch {
+    width: 80%;
+    padding: 5px;
+    border-radius: 10px;
+    border: 5px solid #ff5500;
+
+    display: grid;
+    justify-items: center;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+    grid-template-areas:
+	"timer timer timer"
+	"reset stop start";
+}
+
+.stopwatch .timer {
+    grid-area: timer;
+    font-size: 2em;
+}
+
+.stopwatch .start {
+    grid-area: start;
+    font-size: 1.2em;
+}
+
+.stopwatch .stop {
+    grid-area: stop;
+    font-size: 1.2em;
+}
+
+.stopwatch .reset {
+    grid-area: reset;
+    font-size: 1.2em;
+}
+
